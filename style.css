@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+#filters {
+  margin-bottom: 20px;
+}
+
+#filters label {
+  margin-right: 5px;
+}
+
+#filters select {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+/* Gantt */
+#gantt-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.task {
+  position: relative;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.task:hover {
+  transform: scale(1.05);
+}

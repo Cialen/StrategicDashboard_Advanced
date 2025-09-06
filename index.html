@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Estratégico Avançado</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Dashboard Estratégico Avançado</h1>
+
+  <!-- Filtros -->
+  <section id="filters">
+    <label for="teamSelect">Equipe:</label>
+    <select id="teamSelect">
+      <option value="all">Todas</option>
+      <option value="Equipe A">Equipe A</option>
+      <option value="Equipe B">Equipe B</option>
+    </select>
+
+    <label for="periodSelect">Período:</label>
+    <select id="periodSelect">
+      <option value="all">Todos</option>
+      <option value="Q1">Q1</option>
+      <option value="Q2">Q2</option>
+    </select>
+  </section>
+
+  <!-- KPIs -->
+  <section id="kpis">
+    <h2>Indicadores de Desempenho (KPIs)</h2>
+    <canvas id="kpiChart" width="400" height="150"></canvas>
+  </section>
+
+  <!-- Gantt -->
+  <section id="gantt">
+    <h2>Gráfico de Gantt</h2>
+    <div id="gantt-container"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
